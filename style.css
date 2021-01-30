@@ -1,10 +1,9 @@
 body {
   margin: 0px;
   background: #000;
-  font-family: 'Roboto', sans-serif;
-  color:#fff
+  font-family: "Roboto", sans-serif;
+  color: #fff;
 }
-
 
 .header {
   background-color: #000;
@@ -23,7 +22,7 @@ body {
   margin-right: 40px;
 }
 
-.header__menu ul{
+.header__menu ul {
   display: none;
   list-style: none;
   padding: 0;
@@ -33,11 +32,12 @@ body {
   margin: 0px 0px 0px -14px;
 }
 
-.header__menu:hover ul, ul:hover{
+.header__menu:hover ul,
+ul:hover {
   display: block;
 }
 
-.header__menu li{
+.header__menu li {
   margin: 10px 0;
 }
 
@@ -50,10 +50,9 @@ body {
   text-decoration: underline;
 }
 .header__menu--profile {
-  margin-right: 8px ;
+  margin-right: 8px;
   display: flex;
   align-items: center;
-
 }
 
 .header__menu--profile img {
@@ -61,21 +60,21 @@ body {
   height: 40px;
 }
 
-.header__menu--profile p{
+.header__menu--profile p {
   margin: 0px;
   color: #fff;
 }
 
 /* Búscador */
-.main{
+.main {
   height: 300px;
 }
 
-.main__title{
+.main__title {
   font-size: 25px;
 }
 
-.input{
+.input {
   border: 2px solid #fff;
   border-radius: 25px;
   font-size: 16px;
@@ -84,6 +83,46 @@ body {
   width: 70%;
   background-color: rgba(255, 255, 255, 0.1);
 }
-::placeholder{
+::placeholder {
   color: #fff;
+}
+
+.carousel{
+  width: 100%;
+  overflow: scroll;
+  padding: 30px;
+  position: relative;
+}
+
+.carousel__container{
+  white-space: nowrap;
+  margin: 50px 0;
+  padding-bottom: 10px;
+}
+
+.carousel__item {
+  background: #fff;
+  width: 200px;
+  height: 250px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-right: 10px;
+  display: inline-block;
+  cursor: pointer;
+  transition: 440ms all;
+  transform-origin:center left;
+  position: relative;
+}
+
+.carousel__item:hover ~ .carousel__item {
+  transform: translate3d(100px, 0, 0);
+}
+
+.carousel__container:hover .carousel__item {
+  opacity: 0.3;
+
+} 
+.carousel__container:hover .carousel__item:hover{
+  transform: scale(1.5);
+  opacity: 1;
 }
