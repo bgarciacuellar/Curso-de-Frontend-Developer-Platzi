@@ -76,6 +76,7 @@ ul:hover {
 
 .input {
   border: 2px solid #fff;
+  outline: none;
   border-radius: 25px;
   font-size: 16px;
   height: 50px;
@@ -100,7 +101,7 @@ ul:hover {
   padding-bottom: 10px;
 }
 
-.carousel__item {
+.carousel-item {
   background: #fff;
   width: 200px;
   height: 250px;
@@ -114,15 +115,48 @@ ul:hover {
   position: relative;
 }
 
-.carousel__item:hover ~ .carousel__item {
+.carousel-item:hover ~ .carousel-item {
   transform: translate3d(100px, 0, 0);
 }
 
-.carousel__container:hover .carousel__item {
+.carousel__container:hover .carousel-item {
   opacity: 0.3;
 
 } 
-.carousel__container:hover .carousel__item:hover{
+.carousel__container:hover .carousel-item:hover{
   transform: scale(1.5);
+  opacity: 1;
+}
+
+.carousel-item__img{
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.carousel-item__details{
+  background: linear-gradient(to top, rgba(0,0,0, 0.9) 0%rgba(0,0,0, 0) 100%);
+  font-size: 10px;
+  opacity: 0;
+  transition: 450ms opacity;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+}
+
+.carousel-item__details img{
+  height: 25px;
+}
+.carousel-item__details p{
+      margin: 5px;
+  }
+
+.carousel-item__details:hover{
   opacity: 1;
 }
