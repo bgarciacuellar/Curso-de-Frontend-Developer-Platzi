@@ -74,7 +74,7 @@ ul:hover {
   font-size: 25px;
 }
 
-.input {
+.input-seach {
   border: 2px solid #fff;
   outline: none;
   border-radius: 25px;
@@ -181,6 +181,9 @@ ul:hover {
   padding: 60px 68px 40px;
   min-height: 700px;
   width: 300px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
 .login__container--form{
@@ -216,4 +219,71 @@ ul:hover {
   align-items: center;
   font-size: 14px;
   margin-bottom: 10px;
+}
+
+.login__container--social-media > div >img{
+  width: 30px;
+  margin-right: 10px;
+}
+
+.login__container--register{
+  font-size: 14px;
+}
+
+.login__container--register a{ 
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login__container--register a:hover{ 
+  text-decoration: underline;
+}
+
+.input-login{
+  background: transparent;
+  border-left: o;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 2px solid white;
+  font-family: "Roboto", sans-serif;
+  font-size: 16;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  outline: none;
+  height: 50px;
+}
+
+.button-login{
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  height: 50px;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+
+.footer{
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+
+.footer a{
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  padding-left: 30px;
+  text-decoration: none;
+}
+
+.footer a:hover{
+  text-decoration: underline;
 }
