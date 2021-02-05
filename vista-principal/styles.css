@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Muli', sans-serif;
-  background: #8f57fd;
+  background: #1D212D;
 }
 
 * {
@@ -10,7 +10,7 @@ body {
 
 .header {
   align-items: center;
-  background: #8f57fd;
+  background: #1D212D;
   color: white;
   display: flex;
   height: 100px;
@@ -64,6 +64,9 @@ body {
 .header__menu--profile img {
   margin-right: 8px;
   width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .main {
@@ -71,7 +74,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 300px;
+  height: 250px;
   border-radius: 0px 0px 40px 40px;
 }
 
@@ -81,7 +84,7 @@ body {
 }
 
 .categories__title {
-  background: #8f57fd;
+  background: #1D212D;
   color: white;
   font-size: 16px;
   margin-top: -16px;
@@ -182,7 +185,7 @@ body {
 
 .footer {
   align-items: center;
-  background-color: #8f57fd;
+  background-color: #1D212D;
   display: flex;
   height: 100px;
   width: 100%;
